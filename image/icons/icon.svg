@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 181 181" xml:space="preserve">
+	<style type="text/css">
+	.st1{stroke:#FFFFFF;stroke-width:15;}
+	.st2{stroke:#FFFFFF;stroke-width:7;}
+	</style>
+	<g>
+		<circle fill="#007FD2" cx="90.5" cy="90.5" r="90.5"/>
+		<polyline class="st1" fill="none" points="27.6,25.1 89.3,86.7 150.7,22.6"/>
+		<line class="st1" x1="89.2" y1="86.6" x2="89.2" y2="181"/>
+		<line class="st1" x1="96.0" y1="133.9" x2="131.8" y2="133.9"/>
+		<line class="st1" x1="95.9" y1="167.8" x2="131.8" y2="167.8"/>
+		<line class="st2" x1="96.0" y1="160.3" x2="130" y2="138.3"/>
+	</g>
+</svg>
