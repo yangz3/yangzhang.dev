@@ -220,6 +220,7 @@
             <!-- left column -->
             <div class="col-lg-8 mb-2">
                 <h2>Research</h2>
+                <div class="research-projects">
                 <div class="alert alert-secondary">
                     <h3>Wide-Area Sensors for Ubiquitous Sensing</h3>
                     <div>
@@ -231,7 +232,7 @@
                     </div>
                 </div>
 				
-                <div class="row research-project">
+                <div class="row research-project" data-sort="2019-10-01">
 				<!-- 2019-10-01 -->
 
                     <div class="col-md-4">
@@ -255,7 +256,7 @@
                     </div>
                 </div>
 
-                <div class="row research-project">
+                <div class="row research-project" data-sort="2018-10-01">
 				<!-- 2018-10-01 -->
 
                     <div class="col-md-4">
@@ -289,7 +290,7 @@
 
                 <hr class="dash">
 
-                <div class="row research-project">
+                <div class="row research-project" data-sort="2018-05-01">
 				<!-- 2018-05-01 -->
                     <div class="col-md-4">
                         <video loop muted playsinline poster="/research/Wall/thumbnail.jpg">
@@ -746,6 +747,7 @@
                 <hr class="dash">
 
             </div>
+            </div>
             <!-- /left column -->
             <!-- right column -->
             <div class="col-lg-4 mb-2">
@@ -949,6 +951,16 @@
             }
         });
     });
+
+    var researchProjects = $('.research-projects').html();
+
+    var researchProjectsSorted = $('div.research-project').sort(function (a, b) {
+        var contentA = $(a).attr('data-sort');
+        var contentB = $(b).attr('data-sort');
+        console.log(contentA < contentB);
+        return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+    });
+
 </script>
 
 </html>
