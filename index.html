@@ -158,10 +158,6 @@
             float: left;
         }
 
-        .switch input {
-            display: none;
-        }
-
         .slider {
             position: absolute;
             cursor: pointer;
@@ -184,11 +180,11 @@
             transition: 0.5s;
         }
 
-        input.default:checked+.slider {
+        .active .slider {
             background-color: #555;
         }
 
-        input:checked+.slider:before {
+        .active .slider:before {
             transform: translateX(25px);
         }
     </style>
@@ -265,9 +261,9 @@
                     Research
                     <div class="float-right">
                         <small class="ml-2">Sort by Date</small>
-                        <label class="switch">
-                            <input type="checkbox" class="default">
+                        <div class="switch sort-by-date">
                             <span class="slider"></span>
+                        </div>
                     </div>
                 </h2>
                 <div class="research-projects">
@@ -1007,10 +1003,17 @@
     var researchProjectsSorted = $('div.research-project').sort(function (a, b) {
         var contentA = $(a).attr('data-sort');
         var contentB = $(b).attr('data-sort');
-        console.log(contentA < contentB);
         return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
     });
 
+    $('.sort-by-date').click(function () {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.research-projects').html(researchProjectsSorted);
+        } else {
+            $('.research-projects').html(researchProjects);
+        }
+    });
 </script>
 
 </html>
