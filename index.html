@@ -972,7 +972,7 @@
     var researchProjectsSorted = $('div.research-project').sort(function (a, b) {
         var contentA = $(a).attr('data-sort');
         var contentB = $(b).attr('data-sort');
-        return (contentA < contentB) ? -1 : (contentA > contentB) ? 1 : 0;
+        return (contentA < contentB) ? 1 : (contentA > contentB) ? -1 : 0;
     });
 
     $('.sort-by-date').click(function () {
