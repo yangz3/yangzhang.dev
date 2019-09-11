@@ -153,9 +153,10 @@
         .switch {
             position: relative;
             display: block;
-            width: 50px;
-            height: 22px;
+            width: 32px;
+            height: 18px;
             float: left;
+			top: 3px;
         }
 
         .slider {
@@ -172,9 +173,9 @@
         .slider:before {
             position: absolute;
             content: "";
-            height: 16px;
-            width: 16px;
-            left: 5px;
+            height: 12px;
+            width: 12px;
+            left: 3px;
             bottom: 3px;
             background-color: white;
             transition: 0.5s;
@@ -185,8 +186,16 @@
         }
 
         .active .slider:before {
-            transform: translateX(25px);
+            transform: translateX(14px);
         }
+		
+		.slider.round {
+		  border-radius: 34px;
+		}
+
+		.slider.round:before {
+		  border-radius: 50%;
+		}
     </style>
 
 
@@ -261,7 +270,7 @@
                     <div class="float-right">
                         <small class="ml-2">Sort by Date</small>
                         <div class="switch sort-by-date">
-                            <span class="slider"></span>
+                            <span class="slider round"></span>
                         </div>
                     </div>
                 </h2>
