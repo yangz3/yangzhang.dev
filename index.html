@@ -284,7 +284,7 @@
                 <h2>
                     Research
                     <div class="float-right">
-                        <small class="ml-2">Sort by Date</small>
+                        <small class="ml-2">by category</small>
                         <div class="switch sort-by-date">
                             <span class="slider round"></span>
                         </div>
@@ -837,15 +837,17 @@
 				
                 <h2>Travel Schedule</h2>
                 <ul class="news" style="font-size: 13px">
-	
+					<li>Mar 03 Johns Hopkins University CS</li>
 					<li>Feb 06 UCLA EE</li>
 					<li>Jan 27 University of Michigan CSE</li>
+					<li>Jan 23 UW-Madison CS</li>
 					
                 </ul>
-				
+				<br/>
 				
                 <h2>Latest News</h2>
                 <ul class="news" style="font-size: 13px">
+					<li>Jan 6 Silver Tape is accepted by IMWUT 2020 with minor revisions. Strong performance by Tingyu Chen.</li>
 					<li>Dec 13 Wireality is conditionally accepted at CHI 2020. Strong performance by Cathy.</li>
 					<li>Oct 18 Sozu toolkit <a href="https://github.com/figlab/sozu/">Github repo</a> is ready to go.</li>
 					<li>Sep 20 Two papers submitted to CHI 2020.</li>
@@ -1059,11 +1061,14 @@
     $('.sort-by-date').click(function () {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
-            $('.research-projects').html(researchProjectsSorted);
-        } else {
             $('.research-projects').html(researchProjects);
+        } else {
+            $('.research-projects').html(researchProjectsSorted);
         }
     });
+	
+	$('.research-projects').html(researchProjectsSorted);
+	
 </script>
 
 </html>
