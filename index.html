@@ -1106,14 +1106,14 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
 <script>
     $('#toggle-more-news').click(function () {
-        $('#news-more').toggle();
+        $('#news-more').slideToggle();
         $('#news-more').is(':visible') ? $(this).text('< Hide') : $(this).text('More >');
         return false;
     });
 
     $(window).on('scroll', function () {
         $('video').each(function () {
-            var video = $(this)[0];
+            var video = this;
             var rect = video.getBoundingClientRect();
 
             if (
