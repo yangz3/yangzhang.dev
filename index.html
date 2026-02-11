@@ -1,16 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="Yang Zhang is an Assistant Professor in ECE at UCLA">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.7/css/all.min.css">
-    <base href="https://yangzhang.dev/">
-    <title>Yang Zhang | Ambient intelligence research at UCLA</title>
-    <style>
-        body {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+  <meta content="Yang Zhang is an Assistant Professor in ECE at UCLA" name="description"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.7/css/all.min.css" rel="stylesheet"/>
+  <base href="https://yangzhang.dev/"/>
+  <title>
+   Yang Zhang | Ambient intelligence research at UCLA
+  </title>
+  <style>
+   body {
             margin-top: 20px;
             margin-bottom: 30px;
             font-family: sans-serif;
@@ -51,6 +52,13 @@
             margin-top: 10px;
             margin-bottom: 30px;
         }
+		
+		h6 {
+			font-size: 1rem;        /* same as body text */
+			font-weight: 500;       /* bold */
+			margin: 0 0 0.25rem 0;  /* optional spacing */
+			line-height: 1.4;       /* optional readability */
+		}
 
         .strong {
             color: #2774AE;
@@ -66,15 +74,17 @@
             font-size: 1rem;
             margin-top: 24px;
             margin-bottom: 0;
+			margin-right: 0;
+			margin-left: 0;
         }
 
-        ul.social-icons li::before {
+    /*    ul.social-icons li::before {
             content: '[';
         }
 
         ul.social-icons li::after {
             content: ']';
-        }
+        }*/
 
         ul.social-icons li a {
             border: none;
@@ -112,10 +122,13 @@
             background-color: #F0F0F0;
         }
 
-        div.research-project video {
-            max-width: 100%;
+        div.research-project img.project-thumb {
+            width: 100%;
+            height: auto;
             margin-bottom: 0.5rem;
+            display: block;
         }
+
 
         div.research-project p {
             margin-bottom: 0.3rem;
@@ -130,10 +143,10 @@
             display: none;
         }
 
-        .tweets {
-            overflow: auto;
-            -webkit-overflow-scrolling: touch;
-        }
+		.tweets-window {
+		  max-width: 520px;   /* optional */
+		  width: 100%;
+		}
 
         .info {
             border-style: none;
@@ -193,86 +206,109 @@
 		.slider.round:before {
 		  border-radius: 50%;
 		}
-    </style>
-	
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  </style>
+  <!-- Google Tag Manager -->
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-PFGW5C3');</script>
-	<!-- End Google Tag Manager -->
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48610112-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+	})(window,document,'script','dataLayer','GTM-PFGW5C3');
+  </script>
+  <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-48610112-3">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-48610112-3');
-    </script>
-
-</head>
-
-<body>
-	
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFGW5C3"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	
-    <header class="container">
-        <h1 class="float-md-left mb-0">
-            <a href="/">Yang Zhang</a>
-        </h1>
-        <ul class="list-inline float-md-right social-icons">
-            <li class="list-inline-item"><a href="/CV_YangZhang.pdf">CV/Resume</a></li>
-            <li class="list-inline-item"><a href="https://scholar.google.com/citations?hl=en&user=N6543cwAAAAJ&view_op=list_works&sortby=pubdate">Google
-                    Scholar</a></li>
-		    <li class="list-inline-item"><a href="https://dl.acm.org/profile/81548025596">ACM</a></li>
-            <!-- <li class="list-inline-item"><a href="https://github.com/yangz3">Github</a></li> -->
-            <li class="list-inline-item"><a href="mailto:yangzhang@ucla.edu">Email</a></li>
-            <li class="list-inline-item"><a href="https://hilab.dev">HiLab</a></li>
-        </ul>
-        <div class="clearfix"></div>
-        <hr>
-    </header>
-
-    <div class="container">
-        <div class="row mb-3">
-            <div class="col-xl-7 col-lg-8 col-md-8">
-				
-	            <!-- <p> <b><i><span style='color: #FF0000;'>Update:</span> I am recruiting PhD student this year! If you are interested in creating hardware that could do cool energy harvesting, sensing, computing, communication, and actuation for cyber-physical environments, and want to develop a thesis in this direction, please email me and let's chat. </i></b>
+  </script>
+ </head>
+ <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-PFGW5C3" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header class="container">
+   <h1 class="float-md-left mb-0">
+    <a href="/">
+     Yang Zhang
+    </a>
+   </h1>
+   <ul class="list-inline float-md-right social-icons">
+    <li class="list-inline-item">
+     <a href="/CV_YangZhang.pdf">
+      [CV/Resume]
+     </a>
+    </li>
+    <li class="list-inline-item">
+     <a href="https://scholar.google.com/citations?hl=en&amp;user=N6543cwAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">
+      [Google Scholar]
+     </a>
+    </li>
+    <li class="list-inline-item">
+     <a href="https://dl.acm.org/profile/81548025596">
+     [ACM]
+     </a>
+    </li>
+    <!-- <li class="list-inline-item"><a href="https://github.com/yangz3">Github</a></li> -->
+    <li class="list-inline-item">
+     <a href="mailto:yangzhang@ucla.edu">
+      [Email]
+     </a>
+    </li>
+    <li class="list-inline-item">
+     <a href="https://hilab.dev">
+      [HiLab]
+     </a>
+    </li>
+   </ul>
+   <div class="clearfix">
+   </div>
+   <hr/>
+  </header>
+  <div class="container">
+   <div class="row mb-3">
+    <div class="col-xl-7 col-lg-8 col-md-8">
+     <!-- <p> <b><i><span style='color: #FF0000;'>Update:</span> I am recruiting PhD student this year! If you are interested in creating hardware that could do cool energy harvesting, sensing, computing, communication, and actuation for cyber-physical environments, and want to develop a thesis in this direction, please email me and let's chat. </i></b>
 				 </p> -->
-			
-                <p>
-					I am an Assistant Professor in ECE at UCLA, where I direct the Human-Centered Computing and Intelligent Sensing Lab (<a href="https://hilab.dev">HiLab</a>). My research focuses on enhancing ambient computing devices with powerful perceptual and interaction capabilities, fostering practical, inclusive, and sustainable intelligence that assist users in the physical environment. Specifically, I invent sensing technologies and energy-harvesting systems deployed in user environments, contributing to the advancement of the Internet-of-Things, personal informatics, and assistive and autonomous technologies. A taxonomy of my research can be found below.
-                </p>
-           
-			 
-            </div>
-            <div class="offset-xl-1 col-lg-4 col-md-4">
-                <img src="/image/yang_2024.jpg" class="portrait" alt="a portrait of yang zhang">
-            </div>
-        </div>
-
-        <div class="row taxonomy">
-			
-            <div class="col-lg-8 mb-8">
-                <img src="/image/Taxonomy.jpeg" alt="a diagram of my research focus, which includes wearable sensing, mixed reality, and sensate environments">
-            </div>
-			
-			<div style="margin-top:20px;" class="col-lg-8 mb-8"><p class="annotation">[Research focus diagram inspired by professor <a href="https://people.eecs.berkeley.edu/~bjoern/">Bjoern Hartmann</a>]</p></div>
-        </div>
-
-        <div class="row">
-            <!-- left column -->
-            <div class="col-lg-8 mb-2">
-                <h2>
-                    Research
-					<!--
+     <p>
+      I am an Assistant Professor in ECE at UCLA, where I direct the Human-Centered Computing and Intelligent Sensing Lab (
+      <a href="https://hilab.dev">
+       HiLab
+      </a>
+      ). My research develops new perceptual and interactive capabilities for devices embedded in our physical environments. Together, these systems advance practical, inclusive, and sustainable ambient intelligence that supports people in real-world tasks. Recently, my work has expanded beyond sensing to include actuation and inference, leveraging advances in language models to enable applications in the Internet of Things, personal informatics, and accessibility. A taxonomy of my research appears below.
+     </p>
+    </div>
+    <div class="offset-xl-1 col-lg-4 col-md-4">
+     <img alt="a portrait of yang zhang" class="portrait" src="/image/yang_2024.jpg"/>
+    </div>
+   </div>
+   <div class="row taxonomy">
+    <div class="col-lg-8 mb-8">
+     <img alt="a diagram of my research focus, which includes wearable sensing, mixed reality, and sensate environments" src="/image/Taxonomy.jpeg"/>
+    </div>
+    <div class="col-lg-8 mb-8" style="margin-top:20px;">
+     <p class="annotation">
+      [Research focus diagram inspired by professor
+      <a href="https://people.eecs.berkeley.edu/~bjoern/">
+       Bjoern Hartmann
+      </a>
+      ]
+     </p>
+    </div>
+   </div>
+   <div class="row">
+    <!-- left column -->
+    <div class="col-lg-8 mb-2">
+     <h2>
+      Research
+      <!--
                     <div class="float-right">
                         <small class="ml-2">by category</small>
                         <div class="switch sort-by-date">
@@ -280,664 +316,1178 @@
                         </div>
                     </div>
 					-->
-                </h2>
-				 
-                <div class="research-projects">
-					
-                <div class="alert alert-secondary">
-                    <h3>Please refer to <a href="https://www.hilab.dev" >HiLab's webpage</a> for more recent work </h3>
-                </div>
-					
-					
-                <div class="row research-project" data-sort="2020-12-22">
-                    <div class="col-md-4">
-                       <video loop muted playsinline poster="/research/MorphingCircuit/thumbnail.jpg">
-						   <source type="video/mp4" src="/research/MorphingCircuit/thumbnail.mp4">
-						   <source type="video/webm" src="/research/MorphingCircuit/thumbnail.webm">
-                       </video>
-					   
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-							MorphingCircuit: An Integrated Design, Simulation, and Fabrication Workflow for Self-morphing Electronics
-                        </h6>
-                        <p class="text-muted">
-                            G Wang, F Qin, H Liu, Y Tao, Y Zhang, YJ Zhang, and L Yao. (IMWUT 2020)<br />
+     </h2>
+     <div class="research-projects">
+      <div class="alert alert-secondary">
+       <h3>
+        Please refer to
+        <a href="https://www.hilab.dev">
+         HiLab's webpage
+        </a>
+        for more recent work
+       </h3>
+      </div>
+	  
+	  <div class="row research-project" data-sort="2025-11-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/Hapt-Aids/thumbnail.jpg" alt="Hapt-Aids thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Hapt-Aids: Self-Powered, On-Body Haptics for Activity Monitoring
+	          </h6>
+	          <p class="text-muted">
+	              Xiaoying Yang, Vivian Shen, Chris Harrison, Yang Zhang (IMWUT 2025)<br />
+	              <a class="info" href="https://youtu.be/DWdQ-DQHnbQ">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3749468">[DOI]</a>
+	              <a class="info" href="./research/Hapt-Aids/Hapt-Aids.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-							<a class="info" href="https://vimeo.com/394833754">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/doi/abs/10.1145/3432232">[DOI]</a>
-                            <a class="info" href="/research/MorphingCircuit/MorphingCircuit.pdf">[PDF]</a>
-                        </p>
-                       
-                        <p>
-							MorphingCircuit is an integrated design, simulation, and fabrication workflow that combines electronic functions with forms through four-dimensional (4D) printing, which effectively reduces cost, production time, and e-waste. 
-                        </p>
-                    </div>
-					
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-					
-					
-					
-                <div class="row research-project" data-sort="2020-09-01">
-                    <div class="col-md-4">
-                       <video loop muted playsinline poster="/research/OptoSense/thumbnail.png">
-						   <source type="video/mp4" src="/research/OptoSense/thumbnail.mp4">
-						   <source type="video/webm" src="/research/OptoSense/thumbnail.webm">
-                       </video>
-					   
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-							OptoSense: Towards Ubiquitous Self-Powered Ambient Light Sensing Surfaces
-                        </h6>
-                        <p class="text-muted">
-                            D Zhang, JW Park, Y Zhang, Y Zhao, Y Wang, Y Li, T Bhagwat, W Chou, X Jia, B Kippelen, C Fuentes-Hernandez, T Starner, and G Abowd. (IMWUT 2020)<br />
+	  <div class="row research-project" data-sort="2025-10-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/AccessibilityScout/thumbnail.jpg" alt="Accessibility Scout thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Accessibility Scout: Personalized Accessibility Scans of Built Environments
+	          </h6>
+	          <p class="text-muted">
+	              William Huang, Xia Su, Jon E. Froehlich, Yang Zhang (UIST 2025)<br />
+	              <a class="info" href="https://youtu.be/prrUQ9Kjl-Q">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3746059.3747624">[DOI]</a>
+	              <a class="info" href="./research/AccessibilityScout/AccessibilityScout.pdf">[PDF]</a>
+	              <a class="info" href="https://hilab-open-source.github.io/accessibility-scout/">[Github]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-							<a class="info" href="https://youtu.be/A7FF3m8_b68">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/doi/10.1145/3411826">[DOI]</a>
-                            <a class="info" href="/research/OptoSense/OptoSense.pdf">[PDF]</a>
-                        </p>
-                       
-                        <p>
-							OptoSense is a general-purpose self-powered sensing system which senses ambient light at the surface level of everyday objects as a high-fidelity signal to infer user activities and interactions. 
-                        </p>
-                    </div>
-					
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-					
-					
-                <div class="row research-project" data-sort="2020-05-01">
-                    <div class="col-md-4">
-                       <video loop muted playsinline poster="/research/Wireality/thumbnail.jpg">
-						   <source type="video/mp4" src="/research/Wireality/thumbnail.mp4">
-						   <source type="video/webm" src="/research/Wireality/thumbnail.webm">
-                       </video>
-					   
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-							Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Multi-String Haptics
-                        </h6>
-                        <p class="text-muted">
-                            C Fang, Y Zhang, M Dworman, C Harrison (CHI 2020) <br />
+	  <div class="row research-project" data-sort="2025-10-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/InvisibilityCloak/thumbnail.jpg" alt="Invisibility Cloak thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Invisibility Cloak: Personalized Smartwatch-Guided Camera Obfuscation
+	          </h6>
+	          <p class="text-muted">
+	              Xue Wang, Yang Zhang (UIST 2025)<br />
+	              <a class="info" href="https://www.youtube.com/watch?v=-UlUI3DfKUE">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3746059.3747601">[DOI]</a>
+	              <a class="info" href="./research/InvisibilityCloak/InvisibilityCloak.pdf">[PDF]</a>
+	              <a class="info" href="https://hilab-open-source.github.io/InvisibilityCloak/">[Github]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-							<a class="info" href="https://youtu.be/LzLht9m51XQ">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/doi/abs/10.1145/3313831.3376470">[DOI]</a>
-                            <a class="info" href="/research/Wireality/Wireality.pdf">[PDF]</a>
-                        </p>
-                        <p class="strong">
-                            <i class="fas fa-trophy"></i> Best Paper Award
-                        </p>
-                        
-                        <p>
-							Wireality is a self-contained worn system that allows for individual joints on the hands to be accurately arrested 
-							in 3D space through the use of retractable wires that can be programmatically locked. This allows for convincing tangible 
-							interactions with complex geometries, such as wrapping fingers around a railing.
-                        </p>
-                    </div>
-					
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-					
-				
-                <div class="row research-project" data-sort="2020-03-18">
-                    <div class="col-md-4">
-                       <video loop muted playsinline poster="/research/SilverTape/thumbnail.jpg">
-						   <source type="video/mp4" src="/research/SilverTape/thumbnail.mp4">
-						   <source type="video/webm" src="/research/SilverTape/thumbnail.webm">
-                       </video>
-					   
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Silver Tape: Inkjet-Printed Circuits Peeled-and-Transferred on Versatile Substrates
-                        </h6>
-						
-                        <p class="text-muted">
-                            T Cheng, K Narumi, Y Do, Y Zhang, T Ta, T Sasatani, E Markvicka, Y Kawahara, L Yao, G Abowd, H Oh (IMWUT 2020) <br />
-                            <a class="info" href="https://dl.acm.org/doi/abs/10.1145/3381013">[DOI]</a>
-                            <a class="info" href="/research/SilverTape/SilverTape.pdf">[PDF]</a>
-                        </p>
-                        
-                        <p>
-                            Silver Tape is a simple yet novel fabrication technique to transfer inkjet-printed silver traces from paper onto versatile substrates, 
-							without time-/space- consuming processes such as screen printing or heat sintering. This allows users to quickly implement silver traces 
-							with a variety of properties by exploiting a wide range of substrates such as Scotch tape, PDMS, heat-resistant, and water-soluble tape.
-                        </p>
-                    </div>
-					
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-				
-                <div class="row research-project" data-sort="2019-10-01">
-                    <div class="col-md-4">
-                       <video loop muted playsinline poster="/research/Sozu/thumbnail.png">
-						   <source type="video/mp4" src="/research/Sozu/thumbnail.mp4">
-						   <source type="video/webm" src="/research/Sozu/thumbnail.webm">
-                       </video>
-					   
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Sozu: Self-Powered Radio Tags for Building-Scale Activity Sensing
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, Y Iravantchi, H Jin, S Kumar and C Harrison (UIST 2019) <br />
-							<a class="info" href="https://youtu.be/wbq-eOOIPyw">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3347952">[DOI]</a>
-                            <a class="info" href="/research/Sozu/Sozu.pdf">[PDF]</a>
-                            <a class="info" href="https://github.com/FIGLAB/Sozu">[Code]</a>
-                        </p>
-                        
-                        <p>
-                            Sozu is a low-cost sensing system that can detect a wide range of events wirelessly, through walls and without 
-							line of sight, at whole-building scale. Instead of using batteries, Sozu tags convert energy 
-							from activities that they sense into RF broadcasts, acting like miniature self-powered radio stations.
-                        </p>
-                    </div>
-					
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-				
-				
+	  <div class="row research-project" data-sort="2025-10-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/LuxAct/thumbnail.jpg" alt="LuxAct thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              LuxAct: Enhance Everyday Objects with Interaction-Powered Illumination for Visual Communication
+	          </h6>
+	          <p class="text-muted">
+	              Xiaoying Yang, Qian Lu, Jeeeun Kim, Yang Zhang (UIST 2025)<br />
+	              <a class="info" href="https://youtu.be/X8T-XG-iufA">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3746059.3747392">[DOI]</a>
+	              <a class="info" href="./research/LuxAct/LuxAct.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2018-10-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Vibrosight/thumbnail.jpg">
-                            <source type="video/webm" src="/research/Vibrosight/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Vibrosight/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Vibrosight: Long-Range Vibrometry for Smart Environment Sensing
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, G Laput and C Harrison (UIST 2018) <br />
-							<a class="info" href="https://youtu.be/51XaZDki6yg">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3242608">[DOI]</a>
-                            <a class="info" href="/research/Vibrosight/Vibrosight.pdf">[PDF]</a>
-                            <a class="info" href="https://github.com/FIGLAB/vibrosight">[Code]</a>
-                        </p>
-                        <p class="strong">
-                            <i class="fas fa-medal"></i> Honorable Mention Award
-                        </p>
-                        <p>
-                            Vibrosight senses activities across entire rooms using long-range laser vibrometry. Unlike
-                            a microphone, our approach can sense physical vibrations at one specific point, making it
-                            robust to interference from other activities and noisy environments. This property enables
-                            detection of simultaneous activities, which has proven challenging in prior work.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-				
-                <div class="row research-project" data-sort="2018-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Wall/thumbnail.jpg">
-                            <source type="video/webm" src="/research/Wall/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Wall/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Wall++: Room-Scale Interactive and Context-Aware Sensing
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, C Yang, S E. Hudson, C Harrison and A Sample (CHI 2018) <br />
-							<a class="info" href="https://youtu.be/175LB2OiMHs">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3173847">[DOI]</a>
-                            <a class="info" href="/research/Wall/Wall.pdf">[PDF]</a>
-                        </p>
-                        <p class="strong">
-                            <i class="fas fa-trophy"></i> Best Paper Award
-                        </p>
-                        <p>
-                            Wall++ is a low-cost sensing approach that allows walls to become a smart infrastructure.
-                            Our wall treatment and sensing hardware can track users' touch and gestures, as well as
-                            estimate body pose if they are close. By capturing airborne electromagnetic noise, we can
-                            also detect what appliances are active and where they are located.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2025-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/T2IRay/thumbnail.jpg" alt="T2IRay thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              T2IRay: Design of Thumb-to-Index based Indirect Pointing for Continuous and Robust AR/VR Input
+	          </h6>
+	          <p class="text-muted">
+	              Jina Kim, Yang Zhang, Sang Ho Yoon (CHI 2025)<br />
+	              <a class="info" href="https://doi.org/10.1145/3706598.3713442">[DOI]</a>
+	              <a class="info" href="./research/T2IRay/T2IRay.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2017-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/SyntheticSensor/thumbnail.png">
-                            <source type="video/webm" src="/research/SyntheticSensor/thumbnail.webm">
-                            <source type="video/mp4" src="/research/SyntheticSensor/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Synthetic Sensors: Towards General-Purpose Sensing
-                        </h6>
-                        <p class="text-muted">
-                            G Laput, Y Zhang and C Harrison (CHI 2017) <br />
-							<a class="info" href="https://youtu.be/aqbKrrru2co">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3025773">[DOI]</a>
-                            <a class="info" href="/research/SyntheticSensor/SyntheticSensor.pdf">[PDF]</a>
-                        </p>
+	  <div class="row research-project" data-sort="2025-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/LumosX/thumbnail.jpg" alt="LumosX thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              LumosX: 3D Printed Anisotropic Light-Transfer
+	          </h6>
+	          <p class="text-muted">
+	              Qian Lu, Xiaoying Yang, Xue Wang, Jacob Sayono, Yang Zhang, Jeeeun Kim (CHI 2025)<br />
+	              <a class="info" href="https://doi.org/10.1145/3706598.3714124">[DOI]</a>
+	              <a class="info" href="./research/LumosX/LumosX.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                        <p>
-                            In this work, we explore the notion of general-purpose sensing, wherein a single,
-                            highly capable sensor can indirectly monitor a large context, without direct
-                            instrumentation of objects. Further, through what we call Synthetic Sensors,
-                            we can virtualize raw sensor data into actionable feeds, whilst simultaneously
-                            mitigating immediate privacy issues.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2025-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/EchoSight/thumbnail.jpg" alt="EchoSight thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              EchoSight: Streamlining Bidirectional Virtual-physical Interaction with In-situ Optical Tethering
+	          </h6>
+	          <p class="text-muted">
+	              Jingyu Li, Qingwen Yang, Kenuo Xu, Yang Zhang, Chenren Xu (CHI 2025)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3706598.3713925">[DOI]</a>
+	              <a class="info" href="./research/EchoSight/EchoSight.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
+	  <div class="row research-project" data-sort="2024-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/HapticSkin/thumbnail.jpg" alt="Haptic Skin thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Haptic Artificial Muscle Skin for Extended Reality
+	          </h6>
+	          <p class="text-muted">
+	              Yuxuan Guo, Yang Luo, Roshan Plamthottam, Siyou Pei, Chen Wei, Ziqing Han, Jiacheng Fan, Mason Possinger, Kede Liu, Yingke Zhu, Zhangqing Fei, Isabelle Winardi, Hyeonji Hong, Yang Zhang, Lihua Jin, Qibing Pei (Science Advances 2024)<br />
+	              <a class="info" href="https://doi.org/10.1126/sciadv.adr1765">[DOI]</a>
+	              <a class="info" href="./research/HapticSkin/HapticSkin.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2017-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Electrick/thumbnail.png">
-                            <source type="video/webm" src="/research/Electrick/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Electrick/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Electrick: Low-Cost Touch Sensing Using Electric Field Tomography
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, G Laput and C Harrison (CHI 2017) <br />
-							<a class="info" href="https://youtu.be/38h4-5FDdV4">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3025842">[DOI]</a>
-                            <a class="info" href="/research/Electrick/Electrick.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            Electrick is a low-cost and versatile sensing technique that enables touch input
-                            on a wide variety of objects and surfaces, whether small or large, flat or irregular.
-                            This is achieved by using electric field tomography in concert with an electrically
-                            conductive material, which can be easily and cheaply added to objects and surfaces.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2023-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/WatchYourMouth/thumbnail.jpg" alt="Watch Your Mouth thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Watch Your Mouth: Silent Speech Recognition with Depth Sensing <i class="fas fa-medal"> Honorable Mention Award</i>
+	          </h6>
+	          <p class="text-muted">
+	              Xue Wang, Zixiong Su, Jun Rekimoto, Yang Zhang (CHI 2024)<br />
+	              <a class="info" href="https://youtu.be/wm8CLepJaCg?si=H_7jVMJLF64Cmuf8">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3613904.3642092">[DOI]</a>
+	              <a class="info" href="./research/WatchYourMouth/WatchYourMouth.pdf">[PDF]</a>
+	              <a class="info" href="https://hilab-open-source.github.io/WatchYourMouth/">[Github]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2015-10-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Tomo/thumbnail.png">
-                            <source type="video/webm" src="/research/Tomo/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Tomo/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Tomo: Wearable, Low-cost, Electrical Impedance Tomography for Hand Gesture Recognition
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang and C Harrison (UIST 2015) <br />
-							<a class="info" href="https://youtu.be/N9c4hINa2Bk">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=2807480">[DOI]</a>
-                            <a class="info" href="/research/Tomo/Tomo.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            Tomo recovers the interior impedance geometry of a user's arm by measuring
-                            the cross-sectional impedances from surface electrodes resting on the skin.
-                            We integrated the technology into a prototype wristband, which can classify
-                            gestures in real-time. Our approach is sufficiently compact and low-powered
-                            that we envision this technique being integrated into future smartwatches to
-                            allow hand gestures to work together with touchscreens.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2023-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/WheelPose/thumbnail.jpg" alt="WheelPose thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              WheelPose: Data Synthesis Techniques to Improve Pose Estimation Performance on Wheelchair Users
+	          </h6>
+	          <p class="text-muted">
+	              William Huang, Sam Ghahremani, Siyou Pei, Yang Zhang (CHI 2024)<br />
+	              <a class="info" href="https://youtu.be/KWVG5bVYwd4?si=muJQLxq3d26das-3">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3613904.3642555">[DOI]</a>
+	              <a class="info" href="./research/WheelPose/WheelPose.pdf">[PDF]</a>
+	              <a class="info" href="https://hilab-open-source.github.io/wheelpose/">[Github]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2016-10-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Tomo2/thumbnail.png">
-                            <source type="video/webm" src="/research/Tomo2/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Tomo2/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Advancing Hand Gesture Recognition with High Resolution Electrical Impedance Tomography
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, R Xiao and C Harrison (UIST 2016) <br />
-							<a class="info" href="https://youtu.be/6a8q7HON4_c">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=2984574">[DOI]</a>
-                            <a class="info" href="/research/Tomo2/Tomo2.pdf">[PDF]</a>
-							<a class="info" href="https://github.com/FIGLAB/High-Resolution-EIT">[PCB]</a>
-                        </p>
-                        <p>
-                            We improved our prior work on wearable Electrical Impedance Tomography with
-                            higher sampling speed and resolution. In turn, this enables superior interior
-                            reconstruction and gesture recognition. More importantly, we use our new system
-                            as a vehicle for experimentation -- we compare two EIT sensing methods and three
-                            different electrode resolutions.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2023-04-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/FingerSwitches/thumbnail.jpg" alt="FingerSwitches thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              UI Mobility Control in XR: Switching UI Positionings between Static, Dynamic, and Self Entities
+	          </h6>
+	          <p class="text-muted">
+	              Siyou Pei, David Kim, Alex Olwal, Yang Zhang, Ruofei Du (CHI 2024)<br />
+	              <a class="info" href="https://youtu.be/Lg9shCeJoLA">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3613904.3642220">[DOI]</a>
+	              <a class="info" href="./research/FingerSwitches/FingerSwitches.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
+	  <div class="row research-project" data-sort="2023-12-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/TextureSight/thumbnail.png" alt="TextureSight thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              TextureSight: Texture Detection for Routine Activity Awareness with Wearable Laser Speckle Imaging
+	          </h6>
+	          <p class="text-muted">
+	              Xue Wang, Yang Zhang (IMWUT 2024)<br />
+	              <a class="info" href="https://youtu.be/A0YRHyYma5U?si=nDC6D6WjoQ-4F6uI">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3631413">[DOI]</a>
+	              <a class="info" href="./research/TextureSight/TextureSight.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2018-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Pulp/thumbnail.jpg">
-                            <source type="video/webm" src="/research/Pulp/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Pulp/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Pulp Nonfiction: Low-Cost Touch Tracking for Paper
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang and C Harrison (CHI 2018) <br />
-							<a class="info" href="https://youtu.be/Y1Q0QCPdZys">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3173691">[DOI]</a>
-                            <a class="info" href="/research/Pulp/Pulp.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            We developed a sensing technique for paper to track finger input and also drawn input with
-                            writing implements. Importantly, for paper to still be considered paper, our method had to
-                            be very low cost. This necessitated research into materials, fabrication methods and
-                            sensing techniques. We describe the outcome of our investigations and show that our method
-                            can be sufficiently low-cost and accurate to enable new interactive opportunities with this
-                            pervasive and venerable material.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-				
-				
-                <div class="row research-project" data-sort="2019-10-01">
-                    <div class="col-md-4">
-                       <video loop muted playsinline poster="/research/ActiTouch/thumbnail.png">
-						   <source type="video/mp4" src="/research/ActiTouch/thumbnail.mp4">
-						   <source type="video/webm" src="/research/ActiTouch/thumbnail.webm">
-                       </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            ActiTouch: Robust Touch Detection for On-Skin AR/VR Interfaces
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, W Kienzle, Y Ma, S S. Ng, H Benko, C Harrison (UIST 2019) <br />
-							<a class="info" href="https://youtu.be/ykjMiekzxyA">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3347869">[DOI]</a>
-                            <a class="info" href="/research/ActiTouch/ActiTouch.pdf">[PDF]</a>
-                        </p>
-                        
-                        <p>
-							ActiTouch allows users to use their hands and arms as readily available touch input surfaces for AR and VR, 
-							opening a new interaction opportunity beyond conventional controllers and in-air gestures. 
-							We invented a powerful sensor fusion method which combines an electrical method with computer vision. 
-							This enables precise on-skin touch segmentations, which uniquely enables many fine-grained touch interactions 
-							such as scrolling and swiping.
-                            
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-				
-				
-                <div class="row research-project" data-sort="2019-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Interferi/thumbnail.png">
-                            <source type="video/webm" src="/research/Interferi/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Interferi/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Interferi: Gesture Sensing using On-Body Acoustic Interferometry
-                        </h6>
-                        <p class="text-muted">
-                            Y Iravantchi, Y Zhang, E Bernitsas, M Goel, and C Harrison. (CHI 2019) <br />
-							<a class="info" href="https://youtu.be/_nMauMXDqf8">[Video]</a> 
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3300506">[DOI]</a>
-                            <a class="info" href="/research/Interferi/Interferi.pdf">[PDF]</a>
-                        </p>
-                        <p class="strong">
-                            <i class="fas fa-medal"></i> Honorable Mention Award
-                        </p>
-                        <p>
-							Interferi is an on-body gesture sensing technique using acoustic interferometry. 
-							We use ultrasonic transducers resting on the skin to create acoustic interference 
-							patterns inside the wearer’s body, which interact with anatomical features in complex, 
-							yet characteristic ways. We focus on two areas of the body with great expressive power: 
-							the hands and face. 
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2023-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/CubeSensePlusPlus/thumbnail.png" alt="CubeSense++ thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              CubeSense++: Smart Environment Sensing with Interaction-Powered Corner Reflector Mechanisms
+	          </h6>
+	          <p class="text-muted">
+	              Xiaoying Yang, Jacob Sayono, Yang Zhang (UIST 2023)<br />
+	              <a class="info" href="https://youtu.be/D3uQFWdRM4I?si=rCxjFFZrsU95K0K7">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3586183.3606744">[DOI]</a>
+	              <a class="info" href="./research/CubeSensePlusPlus/CubeSensePlusPlus.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
+	  <div class="row research-project" data-sort="2023-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/Headar/thumbnail.png" alt="Headar thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Headar: Sensing Head Gestures for Confirmation Dialogs on Smartwatches with Wearable Millimeter-Wave Radar
+	          </h6>
+	          <p class="text-muted">
+	              Xiaoying Yang, Xue Wang, Gaofeng Dong, Zihan Yan, Mani Srivastava, Eiji Hayashi, Yang Zhang (IMWUT 2023)<br />
+	              <a class="info" href="https://youtu.be/haQjXGVPx94">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3610900">[DOI]</a>
+	              <a class="info" href="./research/Headar/Headar.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2019-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/PostureAwareTablet/thumbnail.png">
-                            <source type="video/webm" src="/research/PostureAwareTablet/thumbnail.webm">
-                            <source type="video/mp4" src="/research/PostureAwareTablet/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Sensing Posture-Aware Pen+Touch Interaction on Tablets
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, M Pahud, C Holz, H Xia, G Laput, M McGuffin, X Tu, A Mittereder, F Su, W Buxton
-                            and K Hinckley (CHI 2019) <br />
-							<a class="info" href="https://youtu.be/b8zE0BcGiZ0">[Video]</a> 
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3300285">[DOI]</a>
-                            <a class="info" href="/research/PostureAwareTablet/PostureAwareTablet.pdf">[PDF]</a>
-                        </p>
-                        <p class="strong">
-                            <i class="fas fa-medal"></i> Honorable Mention Award
-                        </p>
-                        <p>
-                            The mobility of tablets affords interaction from various user-centric postures including
-                            shifting hand grips, varying screen angle and orientation, planting the palm while writing
-                            or sketching. We propose Posture-Aware Interface which morphs to a suitable frame of
-                            reference, at the right time, and for the right (or left) hand.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
+	  <div class="row research-project" data-sort="2023-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/EmbodiedExploration/thumbnail.png" alt="Embodied Exploration thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Embodied Exploration: Facilitating Remote Accessibility Assessment for Wheelchair Users with Virtual Reality
+	          </h6>
+	          <p class="text-muted">
+	              Siyou Pei, Alexander Chen, Chen Chen, Mingzhe &quot;Franklin&quot; Li, Megan Fozzard, Hao-Yun Chi, Nadir Weibel, Patrick Carrington, Yang Zhang (ASSETS 2023)<br />
+	              <a class="info" href="https://youtu.be/IWj8Lc4u3-E?si=pVp2TpfNizmtfa8O">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3597638.3608410">[DOI]</a>
+	              <a class="info" href="./research/EmbodiedExploration/EmbodiedExploration.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
+	  <div class="row research-project" data-sort="2023-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/InteractionHarvesting/thumbnail.jpg" alt="Interaction Harvesting thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Interaction Harvesting: A Design Probe of User-Powered Widgets
+	          </h6>
+	          <p class="text-muted">
+	              John Mamish, Amy Guo, Thomas Cohen, Julian Richey, Yang Zhang, Josiah Hester (IMWUT 2023)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3610880">[DOI]</a>
+	              <a class="info" href="./research/InteractionHarvesting/InteractionHarvesting.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
 
-                <div class="row research-project" data-sort="2016-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/SkinTrack/thumbnail.png">
-                            <source type="video/webm" src="/research/SkinTrack/thumbnail.webm">
-                            <source type="video/mp4" src="/research/SkinTrack/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            SkinTrack:
+	  <div class="row research-project" data-sort="2023-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/E3D/thumbnail.jpg" alt="E3D thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              E3D: Harvesting Energy from Everyday Kinetic Interactions Using 3D Printed Attachment Mechanisms
+	          </h6>
+	          <p class="text-muted">
+	              Abul Al Arabi, Xue Wang, Yang Zhang, Jeeeun Kim (IMWUT 2023)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3610897">[DOI]</a>
+	              <a class="info" href="./research/E3D/E3D.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/VirtualTour/thumbnail.png" alt="VirtualTour thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Bring Environments to People – A Case Study of Virtual Tours in Accessibility Assessment for People with Limited Mobility
+	          </h6>
+	          <p class="text-muted">
+	              Hao-Yun Chi, Jingzhen &#39;Mina&#39; Sha, Yang Zhang (W4A 2023)<br />
+	              <a class="info" href="https://www.dropbox.com/s/vkt3qcrtotg7d40/VirtualTourA11y.key?dl=0">[Slides]</a>
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3587281.3587292">[DOI]</a>
+	              <a class="info" href="./research/VirtualTour/VirtualTourA11y.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/LaserShoes/thumbnail.png" alt="LaserShoes thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              LaserShoes: Low-Cost Ground Surface Detection Using Laser Speckle Imaging
+	          </h6>
+	          <p class="text-muted">
+	              Zihan Yan, Yuxiaotong Lin, Guanyun Wang, Yu Cai, Peng Cao, Haipeng Mi, Yang Zhang (CHI 2023)<br />
+	              <a class="info" href="https://youtu.be/nq2yYdQaSGc">[Video]</a>
+	              <a class="info" href="https://www.dropbox.com/s/9wisxxx39cntr4z/LaserShoes.pptx?dl=0">[Slides]</a>
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3544548.3581344">[DOI]</a>
+	              <a class="info" href="./research/LaserShoes/LaserShoes.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/ForceSight/thumbnail.png" alt="ForceSight thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              ForceSight: Non-Contact Force Sensing with Laser Speckle Imaging
+	          </h6>
+	          <p class="text-muted">
+	              Siyou Pei, Pradyumna Chari, Xue Wang, Xiaoying Yang, Achuta Kadambi, Yang Zhang (UIST 2022)<br />
+	              <a class="info" href="https://youtu.be/ErxOZNqMSAc">[Video]</a>
+	              <a class="info" href="https://www.dropbox.com/s/y79pwa6o30m5yw8/ForceSight.pptx?dl=0">[Slides]</a>
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3526113.3545622">[DOI]</a>
+	              <a class="info" href="./research/ForceSight/ForceSight.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-10-25">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/AccessibleModality/thumbnail.png" alt="AccessibleModality thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Freedom to Choose: Understanding Input Modality Preferences of People with Upper-body Motor Impairments for Activities of Daily Living
+	          </h6>
+	          <p class="text-muted">
+	              Mingzhe Li, Xieyang Liu, Yang Zhang, Patrick Carrington (ASSETS 2022)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3517428.3544814">[DOI]</a>
+	              <a class="info" href="./research/AccessibleModality/AccessibleModality.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-09-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/Minikers/thumbnail.png" alt="MiniKers thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              MiniKers: Interaction-Powered Smart Environment Automation
+	          </h6>
+	          <p class="text-muted">
+	              Xiaoying Yang, Jacob Sayono, Jess Xu, Jiahao &quot;Nick&quot; Li, Josiah Hester, Yang Zhang (IMWUT 2022)<br />
+	              <a class="info" href="https://www.dropbox.com/s/32gbvjbhjcb9dj7/MIniKers.key?dl=0">[Slides]</a>
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3550287">[DOI]</a>
+	              <a class="info" href="./research/MiniKers/MiniKers.pdf">[PDF]</a>
+	              <a class="info" href="https://github.com/hilab-open-source/minikers">[Github]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/SkinProfiler/thumbnail.png" alt="SkinProfiler thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              SkinProfiler: Low-Cost 3D Scanner for Skin Health Monitoring with Mobile Devices
+	          </h6>
+	          <p class="text-muted">
+	              Zhiying Li, Tejas Viswanath, Zihan Yan, Yang Zhang (MobiSys Workshop 2022)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3539494.3542757">[DOI]</a>
+	              <a class="info" href="./research/SkinProfiler/SkinProfiler.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/HandInterfaces/thumbnail.png" alt="Hand Interfaces thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Hand Interfaces: Using Hands to Imitate Objects in AR/VR for Expressive Interactions <i class="fas fa-medal"> Honorable Mention Award</i>
+	          </h6>
+	          <p class="text-muted">
+	              Siyou Pei, Alexander Chen, Jaewook Lee, Yang Zhang (CHI 2022)<br />
+	              <a class="info" href="https://youtu.be/XGeH2Sbqltw">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3491102.3501898">[DOI]</a>
+	              <a class="info" href="./research/HandInterfaces/HandInterfaces.pdf">[PDF]</a>
+	              <a class="info" href="https://github.com/sypei/Hand-Interfaces">[Github]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/EmoGlass/thumbnail.png" alt="EmoGlass thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              EmoGlass: an End-to-End AI-Enabled Wearable Platform for Enhancing Self-Awareness of Emotional Health
+	          </h6>
+	          <p class="text-muted">
+	              Zihan Yan, Yufei Wu, Yang Zhang, Anthony Chen (CHI 2022)<br />
+	              <a class="info" href="https://doi.org/10.1145/3491102.3501925">[DOI]</a>
+	              <a class="info" href="./research/EmoGlass/EmoGlass.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2022-01-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/FaceBit/thumbnail.png" alt="FaceBit thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              FaceBit: Smart Face Masks Platform
+	          </h6>
+	          <p class="text-muted">
+	              Alexander Curtiss, Blaine Rothrock, Abu Bakar, Nivedita Arora, Jason Huang, Zachary Englhardt, Aaron-Patrick Empedrado, Chixiang Wang, Saad Ahmed, Yang Zhang, Nabil Alshurafa, Josiah Hester (IMWUT 2021)<br />
+	              <a class="info" href="https://doi.org/10.1145/3494991">[DOI]</a>
+	              <a class="info" href="./research/FaceBit/FaceBit.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2021-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/Nod-to-auth/thumbnail.png" alt="Nod-to-auth thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Nod to Auth: Fluent AR/VR Authentication with User Head-Neck Modeling
+	          </h6>
+	          <p class="text-muted">
+	              Xue Wang, Yang Zhang (CHI 2021 LBW)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3411763.3451769">[DOI]</a>
+	              <a class="info" href="./research/Nod-to-auth/Nod-to-auth.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2021-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/CubeSense/thumbnail.png" alt="CubeSense thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              CubeSense: Wireless, Battery-Free Interactivity through Low-Cost Corner Reflector Mechanisms
+	          </h6>
+	          <p class="text-muted">
+	              Xiaoying Yang, Yang Zhang (CHI 2021 LBW)<br />
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3411763.3451599">[DOI]</a>
+	              <a class="info" href="./research/CubeSense/CubeSense.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2021-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/Duco/thumbnail.png" alt="Duco thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Duco: Autonomous Large-Scale Direct-Circuit-Writing (DCW) on Vertical Everyday Surfaces Using A Scalable Hanging Plotter
+	          </h6>
+	          <p class="text-muted">
+	              Tingyu Cheng, Bu Li, Yang Zhang, Yunzhi Li, Charles Ramey, Eui Min Jung, Yepu Cui, Sai Ganesh Swaminathan, Youngwook Do, Manos Tentzeris, Gregory D. Abowd, HyunJoo Oh (IMWUT 2021)<br />
+	              <a class="info" href="https://vimeo.com/606874166">[Video]</a>
+	              <a class="info" href="https://doi.org/10.1145/3478118">[DOI]</a>
+	              <a class="info" href="./research/Duco/Duco.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+
+	  <div class="row research-project" data-sort="2021-05-01">
+	      <div class="col-md-3">
+	          <img class="project-thumb" src="/research/VibrosightPlusPlus/thumbnail.png" alt="Vibrosight++ thumbnail" loading="lazy">
+	      </div>
+	      <div class="col-md-9">
+	          <h6>
+	              Vibrosight++: City-Scale Sensing Using Existing Retroreflective Signs and Markers
+	          </h6>
+	          <p class="text-muted">
+	              Yang Zhang, Sven Mayer, Jesse T. Gonzalez, Chris Harrison (CHI 2021)<br />
+	              <a class="info" href="https://youtu.be/jcXpEXoanJE">[Video]</a>
+	              <a class="info" href="https://dl.acm.org/doi/10.1145/3411764.3445054">[DOI]</a>
+	              <a class="info" href="./research/VibrosightPlusPlus/VibrosightPlusPlus.pdf">[PDF]</a>
+	          </p>
+	      </div>
+	      <div class="col-md-12">
+	          <hr class="dash">
+	      </div>
+	  </div>
+	  
+      <div class="row research-project" data-sort="2020-12-22">
+       <div class="col-md-3">
+        <img alt="MorphingCircuit thumbnail" class="project-thumb" loading="lazy" src="/research/MorphingCircuit/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         MorphingCircuit: An Integrated Design, Simulation, and Fabrication Workflow for Self-morphing Electronics
+        </h6>
+        <p class="text-muted">
+         G Wang, F Qin, H Liu, Y Tao, Y Zhang, YJ Zhang, and L Yao. (IMWUT 2020)
+         <br/>
+         <a class="info" href="https://vimeo.com/394833754">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/doi/abs/10.1145/3432232">
+          [DOI]
+         </a>
+         <a class="info" href="/research/MorphingCircuit/MorphingCircuit.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2020-09-01">
+       <div class="col-md-3">
+        <img alt="OptoSense thumbnail" class="project-thumb" loading="lazy" src="/research/OptoSense/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         OptoSense: Towards Ubiquitous Self-Powered Ambient Light Sensing Surfaces
+        </h6>
+        <p class="text-muted">
+         D Zhang, JW Park, Y Zhang, Y Zhao, Y Wang, Y Li, T Bhagwat, W Chou, X Jia, B Kippelen, C Fuentes-Hernandez, T Starner, and G Abowd. (IMWUT 2020)
+         <br/>
+         <a class="info" href="https://youtu.be/A7FF3m8_b68">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/doi/10.1145/3411826">
+          [DOI]
+         </a>
+         <a class="info" href="/research/OptoSense/OptoSense.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2020-05-01">
+       <div class="col-md-3">
+        <img alt="Wireality thumbnail" class="project-thumb" loading="lazy" src="/research/Wireality/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Wireality: Enabling Complex Tangible Geometries in Virtual Reality with Worn Multi-String Haptics
+        </h6>
+        <p class="text-muted">
+         C Fang, Y Zhang, M Dworman, C Harrison (CHI 2020)
+         <br/>
+         <a class="info" href="https://youtu.be/LzLht9m51XQ">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/doi/abs/10.1145/3313831.3376470">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Wireality/Wireality.pdf">
+          [PDF]
+         </a>
+        </p>
+        <p class="strong">
+         <i class="fas fa-trophy">
+         </i>
+         Best Paper Award
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2020-03-18">
+       <div class="col-md-3">
+        <img alt="SilverTape thumbnail" class="project-thumb" loading="lazy" src="/research/SilverTape/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Silver Tape: Inkjet-Printed Circuits Peeled-and-Transferred on Versatile Substrates
+        </h6>
+        <p class="text-muted">
+         T Cheng, K Narumi, Y Do, Y Zhang, T Ta, T Sasatani, E Markvicka, Y Kawahara, L Yao, G Abowd, H Oh (IMWUT 2020)
+         <br/>
+         <a class="info" href="https://dl.acm.org/doi/abs/10.1145/3381013">
+          [DOI]
+         </a>
+         <a class="info" href="/research/SilverTape/SilverTape.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2019-10-01">
+       <div class="col-md-3">
+        <img alt="Sozu thumbnail" class="project-thumb" loading="lazy" src="/research/Sozu/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Sozu: Self-Powered Radio Tags for Building-Scale Activity Sensing
+        </h6>
+        <p class="text-muted">
+         Y Zhang, Y Iravantchi, H Jin, S Kumar and C Harrison (UIST 2019)
+         <br/>
+         <a class="info" href="https://youtu.be/wbq-eOOIPyw">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3347952">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Sozu/Sozu.pdf">
+          [PDF]
+         </a>
+         <a class="info" href="https://github.com/FIGLAB/Sozu">
+          [Code]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2018-10-01">
+       <div class="col-md-3">
+        <img alt="Vibrosight thumbnail" class="project-thumb" loading="lazy" src="/research/Vibrosight/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Vibrosight: Long-Range Vibrometry for Smart Environment Sensing
+        </h6>
+        <p class="text-muted">
+         Y Zhang, G Laput and C Harrison (UIST 2018)
+         <br/>
+         <a class="info" href="https://youtu.be/51XaZDki6yg">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3242608">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Vibrosight/Vibrosight.pdf">
+          [PDF]
+         </a>
+         <a class="info" href="https://github.com/FIGLAB/vibrosight">
+          [Code]
+         </a>
+        </p>
+        <p class="strong">
+         <i class="fas fa-medal">
+         </i>
+         Honorable Mention Award
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2018-05-01">
+       <div class="col-md-3">
+        <img alt="Wall thumbnail" class="project-thumb" loading="lazy" src="/research/Wall/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Wall++: Room-Scale Interactive and Context-Aware Sensing
+        </h6>
+        <p class="text-muted">
+         Y Zhang, C Yang, S E. Hudson, C Harrison and A Sample (CHI 2018)
+         <br/>
+         <a class="info" href="https://youtu.be/175LB2OiMHs">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3173847">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Wall/Wall.pdf">
+          [PDF]
+         </a>
+        </p>
+        <p class="strong">
+         <i class="fas fa-trophy">
+         </i>
+         Best Paper Award
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2017-05-01">
+       <div class="col-md-3">
+        <img alt="SyntheticSensor thumbnail" class="project-thumb" loading="lazy" src="/research/SyntheticSensor/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Synthetic Sensors: Towards General-Purpose Sensing
+        </h6>
+        <p class="text-muted">
+         G Laput, Y Zhang and C Harrison (CHI 2017)
+         <br/>
+         <a class="info" href="https://youtu.be/aqbKrrru2co">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3025773">
+          [DOI]
+         </a>
+         <a class="info" href="/research/SyntheticSensor/SyntheticSensor.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2017-05-01">
+       <div class="col-md-3">
+        <img alt="Electrick thumbnail" class="project-thumb" loading="lazy" src="/research/Electrick/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Electrick: Low-Cost Touch Sensing Using Electric Field Tomography
+        </h6>
+        <p class="text-muted">
+         Y Zhang, G Laput and C Harrison (CHI 2017)
+         <br/>
+         <a class="info" href="https://youtu.be/38h4-5FDdV4">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3025842">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Electrick/Electrick.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2015-10-01">
+       <div class="col-md-3">
+        <img alt="Tomo thumbnail" class="project-thumb" loading="lazy" src="/research/Tomo/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Tomo: Wearable, Low-cost, Electrical Impedance Tomography for Hand Gesture Recognition
+        </h6>
+        <p class="text-muted">
+         Y Zhang and C Harrison (UIST 2015)
+         <br/>
+         <a class="info" href="https://youtu.be/N9c4hINa2Bk">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=2807480">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Tomo/Tomo.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2016-10-01">
+       <div class="col-md-3">
+        <img alt="Tomo2 thumbnail" class="project-thumb" loading="lazy" src="/research/Tomo2/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Advancing Hand Gesture Recognition with High Resolution Electrical Impedance Tomography
+        </h6>
+        <p class="text-muted">
+         Y Zhang, R Xiao and C Harrison (UIST 2016)
+         <br/>
+         <a class="info" href="https://youtu.be/6a8q7HON4_c">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=2984574">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Tomo2/Tomo2.pdf">
+          [PDF]
+         </a>
+         <a class="info" href="https://github.com/FIGLAB/High-Resolution-EIT">
+          [PCB]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2018-05-01">
+       <div class="col-md-3">
+        <img alt="Pulp thumbnail" class="project-thumb" loading="lazy" src="/research/Pulp/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Pulp Nonfiction: Low-Cost Touch Tracking for Paper
+        </h6>
+        <p class="text-muted">
+         Y Zhang and C Harrison (CHI 2018)
+         <br/>
+         <a class="info" href="https://youtu.be/Y1Q0QCPdZys">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3173691">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Pulp/Pulp.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2019-10-01">
+       <div class="col-md-3">
+        <img alt="ActiTouch thumbnail" class="project-thumb" loading="lazy" src="/research/ActiTouch/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         ActiTouch: Robust Touch Detection for On-Skin AR/VR Interfaces
+        </h6>
+        <p class="text-muted">
+         Y Zhang, W Kienzle, Y Ma, S S. Ng, H Benko, C Harrison (UIST 2019)
+         <br/>
+         <a class="info" href="https://youtu.be/ykjMiekzxyA">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3347869">
+          [DOI]
+         </a>
+         <a class="info" href="/research/ActiTouch/ActiTouch.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2019-05-01">
+       <div class="col-md-3">
+        <img alt="Interferi thumbnail" class="project-thumb" loading="lazy" src="/research/Interferi/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Interferi: Gesture Sensing using On-Body Acoustic Interferometry
+        </h6>
+        <p class="text-muted">
+         Y Iravantchi, Y Zhang, E Bernitsas, M Goel, and C Harrison (CHI 2019)
+         <br/>
+         <a class="info" href="https://youtu.be/_nMauMXDqf8">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3300506">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Interferi/Interferi.pdf">
+          [PDF]
+         </a>
+        </p>
+        <p class="strong">
+         <i class="fas fa-medal">
+         </i>
+         Honorable Mention Award
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2019-05-01">
+       <div class="col-md-3">
+        <img alt="PostureAwareTablet thumbnail" class="project-thumb" loading="lazy" src="/research/PostureAwareTablet/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Sensing Posture-Aware Pen+Touch Interaction on Tablets
+        </h6>
+        <p class="text-muted">
+         Y Zhang, M Pahud, C Holz, H Xia, G Laput, M McGuffin, X Tu, A Mittereder, F Su, W Buxton
+                            and K Hinckley (CHI 2019)
+         <br/>
+         <a class="info" href="https://youtu.be/b8zE0BcGiZ0">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3300285">
+          [DOI]
+         </a>
+         <a class="info" href="/research/PostureAwareTablet/PostureAwareTablet.pdf">
+          [PDF]
+         </a>
+        </p>
+        <p class="strong">
+         <i class="fas fa-medal">
+         </i>
+         Honorable Mention Award
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2016-05-01">
+       <div class="col-md-3">
+        <img alt="SkinTrack thumbnail" class="project-thumb" loading="lazy" src="/research/SkinTrack/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         SkinTrack:
                             Using the Body as an Electrical Waveguide for Continuous Finger Tracking on the Skin
-                        </h6>
-                        <p class="text-muted">
-                            Y Zhang, J Zhou, G Laput and C Harrison (CHI 2016) <br />
-							<a class="info" href="https://youtu.be/9hu8MNuvCHE">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=2858082">[DOI]</a>
-                            <a class="info" href="/research/SkinTrack/SkinTrack.pdf">[PDF]</a>
-                        </p>
-                        <p class="strong">
-                            <i class="fas fa-medal"></i> Honorable Mention Award
-                        </p>
-                        <p>
-                            SkinTrack is a wearable system that enables continuous touch tracking on the skin. It
-                            consists of a signal-emitting ring and a sensing wristband with multiple electrodes. Due to
-                            the phase delay inherent in a high-frequency AC signal propagating through the body, a
-                            phase difference can be observed between pairs of electrodes, which we use to compute a 2D
-                            finger touch coordinate.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-
-
-                <div class="row research-project" data-sort="2016-10-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/AuraSense/thumbnail.png">
-                            <source type="video/webm" src="/research/AuraSense/thumbnail.webm">
-                            <source type="video/mp4" src="/research/AuraSense/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            AuraSense: Enabling Expressive Around-Smartwatch Interactions with Electric Field Sensing
-                        </h6>
-                        <p class="text-muted">
-                            J Zhou, Y Zhang, G Laput and C Harrison (UIST 2016) <br />
-							<a class="info" href="https://youtu.be/gZGqkpuwzrA">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=2984568">[DOI]</a>
-                            <a class="info" href="/research/AuraSense/AuraSense.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            AuraSense enhances smartwatches with Electric Field Sensing to support multiple interaction
-                            modalities. We identified four electrode configurations that can support six well-known
-                            modalities of particular interest and utility, including gestures above the watchface and
-                            touchscreen-like finger tracking on the skin.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-
-
-                <div class="row research-project" data-sort="2017-10-01">				
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/Pyro/thumbnail.png">
-                            <source type="video/webm" src="/research/Pyro/thumbnail.webm">
-                            <source type="video/mp4" src="/research/Pyro/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Pyro: Thumb-Tip Gesture Recognition Using Pyroelectric Infrared Sensing
-                        </h6>
-                        <p class="text-muted">
-                            J Gong, Y Zhang, X Zhou and XD Yang (UIST 2017) <br />
-							<a class="info" href="https://youtu.be/ww_2W787KFg">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3126615">[DOI]</a>
-                            <a class="info" href="/research/Pyro/Pyro.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            Pyro is a micro thumb-tip gesture recognition technique based on thermal infrared signals
-                            radiating from the fingers. Pyro uses a compact, low-power passive sensor, making it
-                            suitable for wearable and mobile applications. To demonstrate the feasibility of Pyro, we
-                            developed a self-contained prototype consisting of the infrared pyroelectric sensor, a
-                            custom sensing circuit, and software for signal processing and machine earning.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-
-                <div class="row research-project" data-sort="2017-05-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/EMPhone/thumbnail.png">
-                            <source type="video/webm" src="/research/EMPhone/thumbnail.webm">
-                            <source type="video/mp4" src="/research/EMPhone/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            Deus EM Machina: On-Touch Contextual Functionality for Smart IoT Appliances
-                        </h6>
-                        <p class="text-muted">
-                            R Xiao, G Laput, Y Zhang and C Harrison (CHI 2017) <br />
-							<a class="info" href="https://youtu.be/eInfzdZ-9fE">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3025828">[DOI]</a>
-                            <a class="info" href="/research/EMPhone/EMPhone.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            We propose an approach where users simply tap a smartphone to an appliance to discover
-                            and rapidly utilize contextual functionality. To achieve this, our prototype smartphone
-                            recognizes physical contact with uninstrumented appliances through EMI sensing, and summons
-                            appliance-specific interfaces.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-
-                <div class="row research-project" data-sort="2018-10-01">
-                    <div class="col-md-4">
-                        <video loop muted playsinline poster="/research/LumiWatch/thumbnail.jpg">
-                            <source type="video/webm" src="/research/LumiWatch/thumbnail.webm">
-                            <source type="video/mp4" src="/research/LumiWatch/thumbnail.mp4">
-                        </video>
-                    </div>
-                    <div class="col-md-8">
-                        <h6>
-                            LumiWatch: On-Arm Projected Graphics and Touch Input
-                        </h6>
-                        <p class="text-muted">
-                            R Xiao, T Cao, N Guo, J Zhuo, Y Zhang and C Harrison (CHI 2018) <br />
-							<a class="info" href="https://youtu.be/VJNMrulWJ3k">[Video]</a>
-                            <a class="info" href="https://dl.acm.org/citation.cfm?id=3173669">[DOI]</a>
-                            <a class="info" href="/research/LumiWatch/LumiWatch.pdf">[PDF]</a>
-                        </p>
-                        <p>
-                            LumiWatch is the first, fully-functional and self-contained projection smartwatch
-                            implementation, containing the requisite compute, power, projection and touch-sensing
-                            capabilities. Our watch offers more than five times that of a typical smartwatch display.
-                            We demonstrate continuous 2D finger tracking with interactive, rectified graphics,
-                            transforming the arm into a touchscreen.
-                        </p>
-                    </div>
-					<div class="col-md-12"> 
-						<hr class="dash">
-					</div>
-                </div>
-
-            </div>
-            </div>
-            <!-- /left column -->
-			
-            <!-- right column -->
-            <div class="col-lg-4 mb-2">
-
-				
-                <!-- <h2>Latest News</h2>
+        </h6>
+        <p class="text-muted">
+         Y Zhang, J Zhou, G Laput and C Harrison (CHI 2016)
+         <br/>
+         <a class="info" href="https://youtu.be/9hu8MNuvCHE">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=2858082">
+          [DOI]
+         </a>
+         <a class="info" href="/research/SkinTrack/SkinTrack.pdf">
+          [PDF]
+         </a>
+        </p>
+        <p class="strong">
+         <i class="fas fa-medal">
+         </i>
+         Honorable Mention Award
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2016-10-01">
+       <div class="col-md-3">
+        <img alt="AuraSense thumbnail" class="project-thumb" loading="lazy" src="/research/AuraSense/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         AuraSense: Enabling Expressive Around-Smartwatch Interactions with Electric Field Sensing
+        </h6>
+        <p class="text-muted">
+         J Zhou, Y Zhang, G Laput and C Harrison (UIST 2016)
+         <br/>
+         <a class="info" href="https://youtu.be/gZGqkpuwzrA">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=2984568">
+          [DOI]
+         </a>
+         <a class="info" href="/research/AuraSense/AuraSense.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2017-10-01">
+       <div class="col-md-3">
+        <img alt="Pyro thumbnail" class="project-thumb" loading="lazy" src="/research/Pyro/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Pyro: Thumb-Tip Gesture Recognition Using Pyroelectric Infrared Sensing
+        </h6>
+        <p class="text-muted">
+         J Gong, Y Zhang, X Zhou and XD Yang (UIST 2017)
+         <br/>
+         <a class="info" href="https://youtu.be/ww_2W787KFg">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3126615">
+          [DOI]
+         </a>
+         <a class="info" href="/research/Pyro/Pyro.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2017-05-01">
+       <div class="col-md-3">
+        <img alt="EMPhone thumbnail" class="project-thumb" loading="lazy" src="/research/EMPhone/thumbnail.png"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         Deus EM Machina: On-Touch Contextual Functionality for Smart IoT Appliances
+        </h6>
+        <p class="text-muted">
+         R Xiao, G Laput, Y Zhang and C Harrison (CHI 2017)
+         <br/>
+         <a class="info" href="https://youtu.be/eInfzdZ-9fE">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3025828">
+          [DOI]
+         </a>
+         <a class="info" href="/research/EMPhone/EMPhone.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+      <div class="row research-project" data-sort="2018-10-01">
+       <div class="col-md-3">
+        <img alt="LumiWatch thumbnail" class="project-thumb" loading="lazy" src="/research/LumiWatch/thumbnail.jpg"/>
+       </div>
+       <div class="col-md-9">
+        <h6>
+         LumiWatch: On-Arm Projected Graphics and Touch Input
+        </h6>
+        <p class="text-muted">
+         R Xiao, T Cao, N Guo, J Zhuo, Y Zhang and C Harrison (CHI 2018)
+         <br/>
+         <a class="info" href="https://youtu.be/VJNMrulWJ3k">
+          [Video]
+         </a>
+         <a class="info" href="https://dl.acm.org/citation.cfm?id=3173669">
+          [DOI]
+         </a>
+         <a class="info" href="/research/LumiWatch/LumiWatch.pdf">
+          [PDF]
+         </a>
+        </p>
+       </div>
+       <div class="col-md-12">
+        <hr class="dash"/>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- /left column -->
+    <!-- right column -->
+    <div class="col-lg-4 mb-2">
+     <!-- <h2>Latest News</h2>
                 <ul class="news" style="font-size: 13px">
 					<li>Feb 7 Parents visiting</li>
 					<li>2025 Jan 16 Concluded 3 days of CHI 25 PC meetings</li>
@@ -1093,155 +1643,381 @@
                 <a id="toggle-more-news" href="#">More &gt;</a>
 				<br/>
 				<br/> -->
-				
-                <h2>PhD Students</h2>
-                <ul class="news" style="font-size: 13px">
-					<li><a href="https://www.sypei.com">Siyou Pei</a></li>
-					<li><a href="https://www.xiaoyingyang.me">Xiaoying Yang</a></li>
-					<li><a href="https://xueewang.github.io">Xue Wang</a></li>
-					<li><a href="https://whuang37.github.io">William Huang</a></li>
-				</ul>
-				<br/>
-				
-
-                <h2>Teaching</h2>
-                <ul class="news" style="font-size: 13px">
-					<li>2026 spring 100 - Electrical and Electronic Circuits</li>
-					<li>2025 sprint 100 - Electrical and Electronic Circuits</li>
-					<li>2025 winter 10 - Circuit Theory I</li>
-					<li>2024 fall 209AS - Engineer Interactive System</li>
-					<li>2024 spring 100 - Electrical and Electronic Circuits</li>
-					<li>2024 winter 10 - Circuit Theory I</li>
-					<li>2023 fall 209AS - Engineer Interactive Systems</li>
-					<li>2023 spring 100 - Electrical and Electronic Circuits</li>
-					<li>2023 winter 209AS - Engineer Interactive Systems</li>
-					<li>2022 fall 188 - Engineer Interactive Systems</li>
-					<li>2022 spring 209AS - Engineer Interactive Systems</li>
-					<li>2022 winter 100 - Electrical and Electronic Circuits</li>
-                </ul>
-				<br/>
-				
-                <h2>Awards</h2>
-                <ul class="news" style="font-size: 13px">
-					<li>2025 Google Research Scholar Award</li>
-					<li>2025 CHI Honorable Mention Award for T2IRay</li>
-					<li>2024 CHI Honorable Mention Award for Watch Your Mouth</li>
-					<li>2023 IMWUT Distinguished Paper Award for Mites</li>
-					<li>2022 UIST Best Demo Honorable Mention for ForceSight</li>
-					<li>2022 CHI Honorable Mention Award for Hand Interfaces</li>
-					<li>2021 IMWUT Distinguished Paper Award for OptoSense</li>
-					<li>2020 CHI Best Paper Award for Wireality</li>
-					<li>2019 CHI Honorable Mention Award for Posture-Aware Pen+Touch Interactions</li>
-					<li>2019 CHI Honorable Mention Award for Interferi</li>
-					<li>2018 CHI Best Paper Award for Wall++</li>
-					<li>2018 UIST Honorable Mention Award for Vibrosight</li>
-					<li>2018 Fast Company Innovation by Design Award Finalist for LumiWatch</li>
-					<li>2017 Qualcomm Innovation Fellowship Winner</li>
-					<li>2017 Fast Company Innovation by Design Award Finalist for Synthetic Sensors</li>
-					<li>2016 CHI Honorable Mention Award for SkinTrack</li>
-					<li>2015 ISS Best Short Paper for Quantifying the Benefit of On-Screen Electrostatic Haptic</li>
-					
-                </ul>
-				<br/>
-				
-                <h2>Service</h2>
-				
-				<p style="font-size: 13px">
-					Subcommittee Chair CHI'25-26<br/>
-					Program Committee: CHI'20-24, UIST'21-24,'26<br/>
-					Associate Editor: IMWUT'23-26
-				</p>
-				
-	
-				<br/>
-                <h2>Press</h2>
-                <ul class="news" style="font-size: 13px">
-					
-					<li>NSF News: <a href="https://beta.nsf.gov/news/fitbit-face-can-turn-any-face-mask-smart-monitoring-device">'Fitbit for the face' can turn any face mask into smart monitoring device</a></li>
-					<li>Forbes: <a href="https://www.forbes.com/sites/saibala/2022/01/13/smart-face-masks--researchers-have-created-a-way-to-digitize-masks/?sh=e9de6c455ae9">‘Smart Face Masks’— Researchers Have Created A Way To Digitize Masks</a></li>
-					<li>Daily Bruin: <a href="https://dailybruin.com/2022/02/16/ucla-researchers-collaborate-in-development-of-smart-mask-for-health-care-workers">Researchers collaborate in development of smart mask for health care workers</a></li>
-					<li>Wevolver: <a href="https://www.wevolver.com/article/smart-face-mask-platform-in-response-to-covid-19-pandemic">Smart Face Mask Platform in Response to COVID-19 Pandemic</a></li>
-					<li>New Atlas: <a href="https://newatlas.com/wireality-vr-haptic-glove/">Wireality offers a novel way to let you "feel" complex objects in VR</a></li>
-					<li>Engadget: <a href="https://www.engadget.com/wireality-vr-haptics-wearable-002643614.html">This VR system tethers your hands to your shoulders to improve haptics</a></li>
-					<li>TechCrunch: <a href="https://techcrunch.com/2018/10/15/new-tech-lets-robots-feel-their-environment/">This robot uses lasers to ‘listen’ to its environment</a></li>
-					<li>Hackaday: <a href="https://hackaday.com/2018/10/22/vibrosight-hears-when-you-are-sleeping-it-knows-when-youre-awake/">Vibrosight hears when you are sleeping. It knows when you're awake</a></li>
-					<li>Fast Company: <a href="https://www.fastcompany.com/90168954/turn-your-wall-into-a-touchscreen-for-20">Turn Your Wall Into A Touch Screen For $20</a></li>
-					<li>NBC News: <a href="https://www.nbcnews.com/mach/science/new-smart-wall-lets-you-control-your-home-swipes-taps-ncna869006">New smart wall lets you control your home with swipes, taps</a></li>
-					<li>Engadget: <a href="https://www.engadget.com/2018/04/24/touch-sensitive-wall-control-home-devices/">Touch-sensitive wall might let you control home devices in the future</a></li>
-					<li>Digital Trends: <a href="https://www.digitaltrends.com/cool-tech/carnegie-mellon-smart-walls/">This conductive paint transforms regular walls into giant touchpads</a></li>
-					<li>The Verge: <a href="https://www.theverge.com/circuitbreaker/2018/4/28/17289976/smart-wall-carnegie-mellon-disney-home">You may soon be able to control your home with a smart wall</a></li>
-					<li>Architect Magazine: <a href="https://www.architectmagazine.com/technology/transforming-walls-into-smart-surfaces_o">Transforming Walls into Smart Surfaces</a></li>
-					<li>Science Magazine: <a href="https://www.sciencemag.org/news/2018/04/watch-researchers-turn-wall-alexa-s-eyes-and-ears">Watch researchers turn a wall into Alexa’s eyes and ears</a></li>
-					<li>MIT Technology Review: <a href="https://www.technologyreview.com/s/604337/a-cheap-simple-way-to-make-anything-a-touch-pad/">A Cheap, Simple Way to Make Anything a Touch Pad</a></li>
-					<li>New Scientist: <a href="https://www.newscientist.com/article/2130534-spray-on-touch-controls-give-an-interactive-twist-to-any-surface/">Spray-on touch controls give an interactive twist to any surface</a></li>
-					<li>The Wall Street Journal: <a href="https://www.wsj.com/articles/how-to-turn-anything-into-a-touchpad-1494604386">How to Turn Anything into a Touchpad</a></li>
-					<li>The Verge: <a href="https://www.theverge.com/2017/5/8/15577390/electrick-spray-on-touch-controls-future-interfaces-group">Electrick lets you spray touch controls onto any object or surface</a></li>
-					<li>Engadget: <a href="https://www.engadget.com/2017/05/08/electrick-paint-touch-input/">Get ready to 'spray' touch controls onto any surface</a></li>
-					<li>CNET: <a href="https://www.cnet.com/news/electrick-touchpad-spray-paint-carnegie-mellon/">Almost anything can become a touchpad with some spray paint</a></li>
-					<li>Popular Science: <a href="https://www.popsci.com/why-touch-sensitive-brain-made-out-jell-o-represents-smart-idea/">What a Jell-O brain tells us about the future of human-machine interaction</a></li>
-					<li>Gizmodo: <a href="https://gizmodo.com/scientists-figure-out-how-to-turn-anything-into-a-touch-1795016303">Scientists Figure Out How to Turn Anything Into a Touchscreen Using Conductive Spray Paint</a></li>
-					<li>TechCrunch: <a href="https://techcrunch.com/2017/05/08/new-technique-turns-anything-into-a-touch-sensor/">New technique turns anything into a touch sensor</a></li>
-					<li>Pittsburgh Post-Gazette <a href="https://www.post-gazette.com/business/tech-news/2017/06/14/Touch-sensing-technology-Electrick-pittsburgh-future-interfaces-group-cmu/stories/201706070162">Touch-sensing technology born of CMU researchers grabs companies' interest</a></li>
-					<li>TechCrunch: <a href="https://techcrunch.com/2017/05/11/google-funded-super-sensor-project-brings-iot-powers-to-dumb-appliances/">Google-funded ‘super sensor’ project brings IoT powers to dumb appliances</a></li>
-					<li>MIT Technology Review: <a href="https://www.technologyreview.com/s/601405/use-your-arm-as-a-smart-watch-touch-pad/">Use Your Arm as a Smart-Watch Touch Pad</a></li>
-					<li>The Verge: <a href="https://www.theverge.com/circuitbreaker/2018/4/27/17289572/lumiwatch-projector-smartwatch-arm-touch-screen">New tech turns your skin into a touchscreen for your smartwatch</a></li>
-					<li>Engadget: <a href="https://www.engadget.com/2016/05/05/touchscreen-skin-smartwatch-tech/">Navigate your smartwatch by touching your skin</a></li>
-					<li>Gizmodo: <a href="https://gizmodo.com/this-new-skinterface-could-make-smartwatches-suck-less-1774926857">This New 'Skinterface' Could Make Smartwatches Suck Less</a></li>
-					<li>CNET: <a href="https://www.cnet.com/news/skintrack-turns-your-entire-forearm-into-a-smartwatch-touchpad/">SkinTrack turns your entire forearm into a smartwatch touchpad</a></li>
-					<li>WIRED: <a href="https://www.wired.com/2016/05/device-turns-arm-touchpad-heres-works/">SkinTrack Turns Your Arm Into a Touchpad</a></li>
-					<li>Gizmodo: <a href="https://gizmodo.com/this-smartwatch-detects-gestures-by-watching-the-muscle-1741490619">This Smartwatch Detects Gestures By Watching the Muscles Inside Your Arm Move</a></li>
-					<li>Hackaday: <a href="https://hackaday.com/2015/11/12/impedance-tomography-is-the-new-x-ray-machine/">Impedance Tomography is the new X-ray Machine</a></li>
-					<li>New Scientist: <a href="https://www.newscientist.com/article/dn28475-no-touch-smartwatch-scans-the-skin-to-see-the-world-around-you/">No-touch smartwatch scans the skin to see the world around you</a></li>
-					
-                </ul>
-				
-                <div class="mt-3 tweets">
-                    <a class="twitter-timeline" width="100%" height="2400" href="https://twitter.com/yanghci">
-                        Tweets by yanghci
-                    </a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-				
-            </div>
-            <!-- /right column -->
-        </div>
-
+     <h2>
+      PhD Students
+     </h2>
+     <ul class="news" style="font-size: 13px">
+      <li>
+       <a href="https://www.sypei.com">
+        Siyou Pei
+       </a>
+      </li>
+      <li>
+       <a href="https://www.xiaoyingyang.me">
+        Xiaoying Yang
+       </a>
+      </li>
+      <li>
+       <a href="https://xueewang.github.io">
+        Xue Wang
+       </a>
+      </li>
+      <li>
+       <a href="https://whuang37.github.io">
+        William Huang
+       </a>
+      </li>
+     </ul>
+     <br/>
+     <h2>
+      Teaching
+     </h2>
+     <ul class="news" style="font-size: 13px">
+      <li>
+       2026 spring 100 - Electrical and Electronic Circuits
+      </li>
+      <li>
+       2025 sprint 100 - Electrical and Electronic Circuits
+      </li>
+      <li>
+       2025 winter 10 - Circuit Theory I
+      </li>
+      <li>
+       2024 fall 209AS - Engineer Interactive System
+      </li>
+      <li>
+       2024 spring 100 - Electrical and Electronic Circuits
+      </li>
+      <li>
+       2024 winter 10 - Circuit Theory I
+      </li>
+      <li>
+       2023 fall 209AS - Engineer Interactive Systems
+      </li>
+      <li>
+       2023 spring 100 - Electrical and Electronic Circuits
+      </li>
+      <li>
+       2023 winter 209AS - Engineer Interactive Systems
+      </li>
+      <li>
+       2022 fall 188 - Engineer Interactive Systems
+      </li>
+      <li>
+       2022 spring 209AS - Engineer Interactive Systems
+      </li>
+      <li>
+       2022 winter 100 - Electrical and Electronic Circuits
+      </li>
+     </ul>
+     <br/>
+     <h2>
+      Awards
+     </h2>
+     <ul class="news" style="font-size: 13px">
+      <li>
+       2025 Google Research Scholar Award
+      </li>
+      <li>
+       2025 CHI Honorable Mention Award for T2IRay
+      </li>
+      <li>
+       2024 CHI Honorable Mention Award for Watch Your Mouth
+      </li>
+      <li>
+       2023 IMWUT Distinguished Paper Award for Mites
+      </li>
+      <li>
+       2022 UIST Best Demo Honorable Mention for ForceSight
+      </li>
+      <li>
+       2022 CHI Honorable Mention Award for Hand Interfaces
+      </li>
+      <li>
+       2021 IMWUT Distinguished Paper Award for OptoSense
+      </li>
+      <li>
+       2020 CHI Best Paper Award for Wireality
+      </li>
+      <li>
+       2019 CHI Honorable Mention Award for Posture-Aware Pen+Touch Interactions
+      </li>
+      <li>
+       2019 CHI Honorable Mention Award for Interferi
+      </li>
+      <li>
+       2018 CHI Best Paper Award for Wall++
+      </li>
+      <li>
+       2018 UIST Honorable Mention Award for Vibrosight
+      </li>
+      <li>
+       2018 Fast Company Innovation by Design Award Finalist for LumiWatch
+      </li>
+      <li>
+       2017 Qualcomm Innovation Fellowship Winner
+      </li>
+      <li>
+       2017 Fast Company Innovation by Design Award Finalist for Synthetic Sensors
+      </li>
+      <li>
+       2016 CHI Honorable Mention Award for SkinTrack
+      </li>
+      <li>
+       2015 ISS Best Short Paper for Quantifying the Benefit of On-Screen Electrostatic Haptic
+      </li>
+     </ul>
+     <br/>
+     <h2>
+      Service
+     </h2>
+     <p style="font-size: 13px">
+      Subcommittee Chair CHI'25-26
+      <br/>
+      Program Committee: CHI'20-24, UIST'21-24,'26
+      <br/>
+      Associate Editor: IMWUT'23-26
+     </p>
+     <br/>
+     <h2>
+      Press
+     </h2>
+     <ul class="news" style="font-size: 13px">
+      <li>
+       NSF News:
+       <a href="https://beta.nsf.gov/news/fitbit-face-can-turn-any-face-mask-smart-monitoring-device">
+        'Fitbit for the face' can turn any face mask into smart monitoring device
+       </a>
+      </li>
+      <li>
+       Forbes:
+       <a href="https://www.forbes.com/sites/saibala/2022/01/13/smart-face-masks--researchers-have-created-a-way-to-digitize-masks/?sh=e9de6c455ae9">
+        &lsquo;Smart Face Masks&rsquo;&mdash; Researchers Have Created A Way To Digitize Masks
+       </a>
+      </li>
+      <li>
+       Daily Bruin:
+       <a href="https://dailybruin.com/2022/02/16/ucla-researchers-collaborate-in-development-of-smart-mask-for-health-care-workers">
+        Researchers collaborate in development of smart mask for health care workers
+       </a>
+      </li>
+      <li>
+       Wevolver:
+       <a href="https://www.wevolver.com/article/smart-face-mask-platform-in-response-to-covid-19-pandemic">
+        Smart Face Mask Platform in Response to COVID-19 Pandemic
+       </a>
+      </li>
+      <li>
+       New Atlas:
+       <a href="https://newatlas.com/wireality-vr-haptic-glove/">
+        Wireality offers a novel way to let you "feel" complex objects in VR
+       </a>
+      </li>
+      <li>
+       Engadget:
+       <a href="https://www.engadget.com/wireality-vr-haptics-wearable-002643614.html">
+        This VR system tethers your hands to your shoulders to improve haptics
+       </a>
+      </li>
+      <li>
+       TechCrunch:
+       <a href="https://techcrunch.com/2018/10/15/new-tech-lets-robots-feel-their-environment/">
+        This robot uses lasers to &lsquo;listen&rsquo; to its environment
+       </a>
+      </li>
+      <li>
+       Hackaday:
+       <a href="https://hackaday.com/2018/10/22/vibrosight-hears-when-you-are-sleeping-it-knows-when-youre-awake/">
+        Vibrosight hears when you are sleeping. It knows when you're awake
+       </a>
+      </li>
+      <li>
+       Fast Company:
+       <a href="https://www.fastcompany.com/90168954/turn-your-wall-into-a-touchscreen-for-20">
+        Turn Your Wall Into A Touch Screen For $20
+       </a>
+      </li>
+      <li>
+       NBC News:
+       <a href="https://www.nbcnews.com/mach/science/new-smart-wall-lets-you-control-your-home-swipes-taps-ncna869006">
+        New smart wall lets you control your home with swipes, taps
+       </a>
+      </li>
+      <li>
+       Engadget:
+       <a href="https://www.engadget.com/2018/04/24/touch-sensitive-wall-control-home-devices/">
+        Touch-sensitive wall might let you control home devices in the future
+       </a>
+      </li>
+      <li>
+       Digital Trends:
+       <a href="https://www.digitaltrends.com/cool-tech/carnegie-mellon-smart-walls/">
+        This conductive paint transforms regular walls into giant touchpads
+       </a>
+      </li>
+      <li>
+       The Verge:
+       <a href="https://www.theverge.com/circuitbreaker/2018/4/28/17289976/smart-wall-carnegie-mellon-disney-home">
+        You may soon be able to control your home with a smart wall
+       </a>
+      </li>
+      <li>
+       Architect Magazine:
+       <a href="https://www.architectmagazine.com/technology/transforming-walls-into-smart-surfaces_o">
+        Transforming Walls into Smart Surfaces
+       </a>
+      </li>
+      <li>
+       Science Magazine:
+       <a href="https://www.sciencemag.org/news/2018/04/watch-researchers-turn-wall-alexa-s-eyes-and-ears">
+        Watch researchers turn a wall into Alexa&rsquo;s eyes and ears
+       </a>
+      </li>
+      <li>
+       MIT Technology Review:
+       <a href="https://www.technologyreview.com/s/604337/a-cheap-simple-way-to-make-anything-a-touch-pad/">
+        A Cheap, Simple Way to Make Anything a Touch Pad
+       </a>
+      </li>
+      <li>
+       New Scientist:
+       <a href="https://www.newscientist.com/article/2130534-spray-on-touch-controls-give-an-interactive-twist-to-any-surface/">
+        Spray-on touch controls give an interactive twist to any surface
+       </a>
+      </li>
+      <li>
+       The Wall Street Journal:
+       <a href="https://www.wsj.com/articles/how-to-turn-anything-into-a-touchpad-1494604386">
+        How to Turn Anything into a Touchpad
+       </a>
+      </li>
+      <li>
+       The Verge:
+       <a href="https://www.theverge.com/2017/5/8/15577390/electrick-spray-on-touch-controls-future-interfaces-group">
+        Electrick lets you spray touch controls onto any object or surface
+       </a>
+      </li>
+      <li>
+       Engadget:
+       <a href="https://www.engadget.com/2017/05/08/electrick-paint-touch-input/">
+        Get ready to 'spray' touch controls onto any surface
+       </a>
+      </li>
+      <li>
+       CNET:
+       <a href="https://www.cnet.com/news/electrick-touchpad-spray-paint-carnegie-mellon/">
+        Almost anything can become a touchpad with some spray paint
+       </a>
+      </li>
+      <li>
+       Popular Science:
+       <a href="https://www.popsci.com/why-touch-sensitive-brain-made-out-jell-o-represents-smart-idea/">
+        What a Jell-O brain tells us about the future of human-machine interaction
+       </a>
+      </li>
+      <li>
+       Gizmodo:
+       <a href="https://gizmodo.com/scientists-figure-out-how-to-turn-anything-into-a-touch-1795016303">
+        Scientists Figure Out How to Turn Anything Into a Touchscreen Using Conductive Spray Paint
+       </a>
+      </li>
+      <li>
+       TechCrunch:
+       <a href="https://techcrunch.com/2017/05/08/new-technique-turns-anything-into-a-touch-sensor/">
+        New technique turns anything into a touch sensor
+       </a>
+      </li>
+      <li>
+       Pittsburgh Post-Gazette
+       <a href="https://www.post-gazette.com/business/tech-news/2017/06/14/Touch-sensing-technology-Electrick-pittsburgh-future-interfaces-group-cmu/stories/201706070162">
+        Touch-sensing technology born of CMU researchers grabs companies' interest
+       </a>
+      </li>
+      <li>
+       TechCrunch:
+       <a href="https://techcrunch.com/2017/05/11/google-funded-super-sensor-project-brings-iot-powers-to-dumb-appliances/">
+        Google-funded &lsquo;super sensor&rsquo; project brings IoT powers to dumb appliances
+       </a>
+      </li>
+      <li>
+       MIT Technology Review:
+       <a href="https://www.technologyreview.com/s/601405/use-your-arm-as-a-smart-watch-touch-pad/">
+        Use Your Arm as a Smart-Watch Touch Pad
+       </a>
+      </li>
+      <li>
+       The Verge:
+       <a href="https://www.theverge.com/circuitbreaker/2018/4/27/17289572/lumiwatch-projector-smartwatch-arm-touch-screen">
+        New tech turns your skin into a touchscreen for your smartwatch
+       </a>
+      </li>
+      <li>
+       Engadget:
+       <a href="https://www.engadget.com/2016/05/05/touchscreen-skin-smartwatch-tech/">
+        Navigate your smartwatch by touching your skin
+       </a>
+      </li>
+      <li>
+       Gizmodo:
+       <a href="https://gizmodo.com/this-new-skinterface-could-make-smartwatches-suck-less-1774926857">
+        This New 'Skinterface' Could Make Smartwatches Suck Less
+       </a>
+      </li>
+      <li>
+       CNET:
+       <a href="https://www.cnet.com/news/skintrack-turns-your-entire-forearm-into-a-smartwatch-touchpad/">
+        SkinTrack turns your entire forearm into a smartwatch touchpad
+       </a>
+      </li>
+      <li>
+       WIRED:
+       <a href="https://www.wired.com/2016/05/device-turns-arm-touchpad-heres-works/">
+        SkinTrack Turns Your Arm Into a Touchpad
+       </a>
+      </li>
+      <li>
+       Gizmodo:
+       <a href="https://gizmodo.com/this-smartwatch-detects-gestures-by-watching-the-muscle-1741490619">
+        This Smartwatch Detects Gestures By Watching the Muscles Inside Your Arm Move
+       </a>
+      </li>
+      <li>
+       Hackaday:
+       <a href="https://hackaday.com/2015/11/12/impedance-tomography-is-the-new-x-ray-machine/">
+        Impedance Tomography is the new X-ray Machine
+       </a>
+      </li>
+      <li>
+       New Scientist:
+       <a href="https://www.newscientist.com/article/dn28475-no-touch-smartwatch-scans-the-skin-to-see-the-world-around-you/">
+        No-touch smartwatch scans the skin to see the world around you
+       </a>
+      </li>
+     </ul>
+	 
+	 
     </div>
-
-<footer>
-    <div class="container">
-		<small> &copy; 2015 - 2022 All rights reserved.</small>
-	</div>
-        
-</footer>
-
-</body>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
-<script>
-    $('#toggle-more-news').click(function () {
+    <!-- /right column -->
+   </div>
+  </div>
+  <footer>
+   <div class="container">
+    <small>
+     &copy; 2015 - 2026 All rights reserved.
+    </small>
+   </div>
+  </footer>
+  
+ </body>
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js">
+ </script>
+ <script>
+  $('#toggle-more-news').click(function () {
         $('#news-more').slideToggle();
         $('#news-more').is(':visible') ? $(this).text('< Hide') : $(this).text('More >');
         return false;
     });
 
-    $(window).on('scroll', function () {
-        $('video').each(function () {
-            var video = this;
-            var rect = video.getBoundingClientRect();
-
-            if (
-                rect.top >= 0 && rect.left >= 0 &&
-                rect.bottom <= $(window).height() &&
-                rect.right <= $(window).width()
-            ) {
-                video.play();
-            } else {
-                video.pause();
-            }
-        });
     });
 
     var researchProjects = $('.research-projects').html();
@@ -1266,6 +2042,5 @@
     document.querySelectorAll('.email-anchor').forEach(function(a) {
         a.href = 'mailto:' + ['yangzhang', 'ucla.edu'].join('@');
     });
-</script>
-
+ </script>
 </html>
